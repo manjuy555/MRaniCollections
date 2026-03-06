@@ -2,14 +2,6 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-            base: "/MRaniCollections/",
-
-  plugins: [
-    react({
-
-      babel: {
-        plugins: [['babel-plugin-react-compiler']],
-      },
-    }),
-  ],
+  base: "/MRaniCollections/",
+  plugins: [react()],
 })
